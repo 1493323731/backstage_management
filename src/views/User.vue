@@ -34,7 +34,7 @@
       <el-button @click="handleAdd" type="primary"> +新增 </el-button>
       <el-form :inline="true" :model="userForm">
         <el-form-item>
-          <el-input placeholder="请输入姓名" v-model="userForm.name"></el-input>
+          <el-input placeholder="请输入姓名或地址" v-model="userForm.name"></el-input>
         </el-form-item>
         <el-form-item>
           <el-button type="primary" @click="onSubmit">搜索</el-button>
@@ -182,6 +182,9 @@ export default {
     },
     //查询
     onSubmit() {
+      this.pageData.page = 1
+      //查询前将page变为1，不然展示查找关键词结果的第二页
+      //第二页没有值，就会显示空数据
       this.getList();
     },
   },
