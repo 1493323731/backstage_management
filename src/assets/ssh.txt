@@ -5,3 +5,13 @@ clip < ~/.ssh/id_rsa.pub
 回车后就复制到剪切板了，到github添加ssh keys的地方直接就能粘贴上
 使用如下命令可以测试是否能与github通信
 $ ssh -T git@github.com
+使用hexo搭建博客
+使用hexo init blog(项目名字可以自定义)初始化hexo 
+使用cd blog进入创建的项目文件夹
+使用npm i 安装相关依赖
+使用hexo s启动项目
+访问http://localhost:4000/，出现页面表示本地部署成功
+将项目部署到Github Pages
+使用npm install hexo-deployer-git --save安装部署所需依赖
+使用vscode打开_config配置文件
+修改deloy
