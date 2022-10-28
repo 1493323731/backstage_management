@@ -1,1 +1,4 @@
+使用以下指令生成ssh密钥
 ssh-keygen -t rsa -C "1493323731@qq.com"
+直接复制粘贴.ssh的文件会破坏格式，在git bash中输入命令clip < ~/.ssh/id_rsa.pub
+回车后就复制到剪切板了，到github添加ssh keys的地方直接就能粘贴上
