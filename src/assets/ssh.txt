@@ -15,3 +15,10 @@ $ ssh -T git@github.com
 使用npm install hexo-deployer-git --save安装部署所需依赖
 使用vscode打开_config配置文件
 修改deloy
+deploy:
+  type: git
+  repository: git@github.com:1493323731/1493323731.github.io.git
+  branch: main
+  (将用户名和邮箱替换成自己的)
+使用 hexo clean && hexo generate && hexo deploy进行清理、生成和部署
+回到github仓库发现已经更新，创建个人博客成功
