@@ -4,7 +4,7 @@ ssh-keygen -t rsa -C "1493323731@qq.com"
 clip < ~/.ssh/id_rsa.pub
 回车后就复制到剪切板了，到github添加ssh keys的地方直接就能粘贴上
 使用如下命令可以测试是否能与github通信
-$ ssh -T git@github.com
+ssh -T git@github.com
 使用hexo搭建博客
 使用hexo init blog(项目名字可以自定义)初始化hexo 
 使用cd blog进入创建的项目文件夹
