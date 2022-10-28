@@ -1,1 +1,1 @@
-ssh-keygen -t rsa -b 4096 -C "1493323731@qq.com"
+ssh-keygen -t rsa -C "1493323731@qq.com"
