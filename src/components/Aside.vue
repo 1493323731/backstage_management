@@ -7,7 +7,7 @@
     text-color="#fff"
     active-text-color="#ffd04b"
   >
-    <h3>{{ isCollapse ? "后台" : "后台管理" }}</h3>
+    <h3>{{ isCollapse ? "-->" : "后台管理" }}</h3>
     <el-menu-item
       v-for="item in noChidren"
       @click="clickMenu(item)"
